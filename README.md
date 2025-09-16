@@ -25,12 +25,18 @@ A comprehensive Java-based web application for efficient email management with r
 
 | Step | Description | Screenshot |
 |------|-------------|------------|
-| 1 | **Login Page** - Secure user authentication | `screenshots/login.png` |
-| 2 | **Registration** - New user account creation | `screenshots/register.png` |
-| 3 | **Dashboard** - Main application interface | `screenshots/dashboard.png` |
-| 4 | **Add Email** - Compose and send emails | `screenshots/add-email.png` |
-| 5 | **View Emails** - Browse email history | `screenshots/view-emails.png` |
-| 6 | **Reports** - Generate analytical reports | `screenshots/reports.png` |
+| 1 | **Login Page** - Secure user authentication | `<img width="1915" height="924" alt="image" src="https://github.com/user-attachments/assets/f7f89967-e8ee-44e5-80e4-ed6431f5f583" />
+` |
+| 2 | **Registration** - New user account creation | `<img width="1917" height="921" alt="image" src="https://github.com/user-attachments/assets/09f18b49-37a5-4537-8698-55798ce8ef6e" />
+` |
+| 3 | **Dashboard** - Main application interface | `<img width="1901" height="929" alt="image" src="https://github.com/user-attachments/assets/da9f5424-e549-4a2a-9517-31c3af9ce464" />
+` |
+| 4 | **Add Email** - Compose and send emails | `<img width="1918" height="924" alt="image" src="https://github.com/user-attachments/assets/90bf7669-244e-4fed-ae7b-b9f35dfcdafd" />
+` |
+| 5 | **View Emails** - Browse email history | `<img width="1900" height="928" alt="image" src="https://github.com/user-attachments/assets/57c17549-f2dd-4f57-89ca-cbacc4ef5edd" />
+` |
+| 6 | **Reports** - Generate analytical reports | `<img width="1899" height="932" alt="image" src="https://github.com/user-attachments/assets/82a3e302-eeab-4e39-aae0-b4ae3bf6a21a" />
+` |
 
 > 💡 **Note:** Screenshots are located in the `screenshots/` directory
 
