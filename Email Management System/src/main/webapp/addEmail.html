@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Email</title>
+<link rel="stylesheet" href="style1.css">
+ <link rel="stylesheet" href="dynamic-styles.css">
+</head>
+<body>
+  <div class="card">
+    <h1>➕ Add Email</h1>
+      <div class="form">
+         <form action="AddEmailServlet" method="post">
+            <label>Sender Email:</label>
+            <input type="email" placeholder="Sender_Email" name="sender" required>
+            
+            <label>Receiver Email:</label>
+            <input type="email" placeholder="Receiver_Email" name="receiver" required>
+            
+            <label>Subject:</label>
+            <input type="text" placeholder="Subject" name="subject" required>
+            
+            <label>Message:</label>
+            <textarea placeholder="Message" name="body" required></textarea>
+            
+            <label>Sent Date:</label>
+           <input type="datetime-local" name="date" required>
+            
+           <input type="submit" class="btn" value="Send Email">
+         </form>
+         <a href="home.jsp">⬅ Back to Home</a>
+      </div>
+  </div>
+<!--   <script src="style.js"></script>
+ --> <!-- <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Auto-fill current datetime if date field is empty
+    const dateField = document.querySelector('input[name="date"]');
+    if (dateField && !dateField.value) {
+        const now = new Date();
+        // Format to YYYY-MM-DDTHH:MM
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const day = String(now.getDate()).padStart(2, '0');
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        
+        dateField.value = `${year}-${month}-${day}T${hours}:${minutes}`;
+    }
+    
+    // Character counter for message textarea
+    const messageTextarea = document.querySelector('textarea[name="body"]');
+    if (messageTextarea) {
+        const charCount = document.createElement('div');
+        charCount.className = 'char-count';
+        charCount.textContent = '0 characters';
+        messageTextarea.parentNode.appendChild(charCount);
+        
+        messageTextarea.addEventListener('input', function() {
+            charCount.textContent = `${this.value.length} characters`;
+            
+            if (this.value.length > 1000) {
+                charCount.classList.add('over-limit');
+            } else {
+                charCount.classList.remove('over-limit');
+            }
+        });
+    }
+});
+</script> -->
+</body>
+</html>

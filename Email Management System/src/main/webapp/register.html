@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register pages!</title>
+<link rel=stylesheet href=auth.css>
+ <link rel="stylesheet" href="dynamic-styles.css">
+</head>
+<body>
+   <div class="form-container">
+       <h2>📝 Register</h2>
+      <form action="authServlet" method="post">
+           <label>Full-Name:</label>        
+           <input type="text" placeholder="full_name" name="name" required>
+           
+           <label>Username:</label>
+           <input type="text" placeholder="username" name="username" required>
+           
+           <label>Email:</label>
+           <input type="email" placeholder="email" name="email" required>
+ 
+           <label>Password:</label>
+           <input type="password" placeholder="password" name="password" required>
+           
+           <input type="submit" value="Register">
+           
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+      </form>
+</div>
+<!--  <script src="style.js"></script>
+ --></body>
+</html>

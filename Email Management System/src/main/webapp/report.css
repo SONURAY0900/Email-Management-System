@@ -1,0 +1,208 @@
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #1565c0;
+}
+
+/* Back button styles */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(145deg, #2196f3 0%, #1976d2 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 1000;
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+    background: linear-gradient(145deg, #42a5f5 0%, #2196f3 100%);
+}
+
+.back-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(33, 150, 243, 0.3);
+}
+
+/* Arrow icon for back button */
+.back-button::before {
+    content: '←';
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Reports section */
+.reports {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.reports h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #0d47a1;
+    text-shadow: 0 2px 4px rgba(13, 71, 161, 0.1);
+}
+
+/* Card container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Individual cards */
+.card {
+    background: linear-gradient(145deg, #ffffff 0%, #f8fbff 100%);
+    border: 2px solid #90caf9;
+    border-radius: 15px;
+    padding: 30px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(33, 150, 243, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.card:hover::before {
+    left: 100%;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(33, 150, 243, 0.2);
+    border-color: #42a5f5;
+    background: linear-gradient(145deg, #ffffff 0%, #e3f2fd 100%);
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #0d47a1;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #1976d2;
+    opacity: 0.9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .back-button {
+        position: relative;
+        margin: 0 0 20px 0;
+        align-self: flex-start;
+    }
+    
+    .reports {
+        padding: 20px 10px;
+        margin-top: 0;
+    }
+    
+    .reports h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .card {
+        padding: 25px;
+    }
+    
+    .card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .back-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .reports h2 {
+        font-size: 1.8rem;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+}
+
+/* Add subtle animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+.card:nth-child(7) { animation-delay: 0.7s; }

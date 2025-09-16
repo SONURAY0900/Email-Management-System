@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Report pages!</title>
+<link rel="stylesheet" href="report.css">
+ <link rel="stylesheet" href="dynamic-styles.css">
+</head>
+<body>
+<a href="home.jsp" class="back-button">Go Back</a>
+
+ <section class="reports" id="reports">
+  <h2>📊 Report Page</h2>
+  <div class="card-container">
+
+    <a href="report_esbs.jsp" class="card">
+      <h3>📧 Emails Sent by Each Sender</h3>
+      <p>View a table or chart showing how many emails each sender has sent. (from query e)</p>
+    </a>
+
+    <a href="report_les.jsp" class="card">
+      <h3>⏱ Latest Email per Sender</h3>
+      <p>Check the last email sent by each sender, including sender name and date. (from query f)</p>
+    </a>
+
+    <a href="report_epd.jsp" class="card">
+      <h3>📆 Emails per Day (Trend)</h3>
+      <p>See daily email activity with a line or bar chart showing number of emails sent each day. (from query i)</p>
+    </a>
+
+    <a href="report_keywords.jsp" class="card">
+      <h3>🔍 Emails with Specific Keywords</h3>
+      <p>Search emails containing words like “Assignment”, “Exam”, or “Project”. (from query g)</p>
+    </a>
+
+    <a href="report_receivers.jsp" class="card">
+      <h3>🏆 Top Receivers</h3>
+      <p>Find out which receivers got the most emails. (like query e but grouped by RECEIVER)</p>
+    </a>
+
+    <a href="report_first_last.jsp" class="card">
+      <h3>🕒 Latest & First Email in the System</h3>
+      <p>View the very first email and the most recent one with sender and date details.</p>
+    </a>
+
+    <a href="report_filter.jsp" class="card">
+      <h3>🎯 Filter Reports (Advanced)</h3>
+      <p>Filter by sender or receiver to check email history between two selected dates. (based on query d)</p>
+    </a>
+
+  </div>
+</section>
+<!--  <script src="style.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Add click animation to report cards
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Prevent default if it's not a link
+            if (this.tagName !== 'A') {
+                e.preventDefault();
+                window.location.href = this.getAttribute('data-href') || this.querySelector('a').href;
+            }
+        });
+        
+        // Add hover effect
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = '';
+        });
+    });
+    
+    // For filter forms, add date validation
+    const filterForms = document.querySelectorAll('form[method="get"]');
+    filterForms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            const startDate = this.querySelector('input[name="startDate"]');
+            const endDate = this.querySelector('input[name="endDate"]');
+            
+            if (startDate && endDate && startDate.value && endDate.value) {
+                if (new Date(startDate.value) > new Date(endDate.value)) {
+                    e.preventDefault();
+                    showNotification('End date must be after start date', 'error');
+                    endDate.focus();
+                }
+            }
+        });
+    });
+});
+</script> -->
+</body>
+</html>
